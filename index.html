@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio Guillem">
+    <meta name="author" content="Guillem giner">
+    <title>Portfolio Guillem</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/index.js" async></script>
+  </head>
+
+  <body onload=loadData()>
+    <div class="header">
+      <header class="container-fluid p-0">
+          <nav>
+                  <ul class="navigation">
+                    <div class="logo">
+                      <img src="css/img/logo.png" alt="Guillem Giner" width="20%" height="auto">
+                  </div>
+                    <li><a href="#quiensoy">La empresa</a></li>
+                    <li><a href="#portfolio">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                  </ul>
+          </nav>
+      </header>
+  
+      <main>
+        <section id="quiensoy">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h1 class="fw-light titular">Bienvenido a MIRA QUE WINE</h1>
+                <h4 class="lead">La tienda de vinos que llenará tu bodega de casa</h4>
+                <p class="lead">Arrastra y suelta en el carrito de la compra los vinos que más desees.</p>
+                <img src="css/img/destacado.png" class="rounded mx-auto d-block" alt="mira que wine" width="20%" height="auto">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+      <section id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <div class="card-deck">
+                <div class="row row-cols-lg-3 row-cols-md-2 deck">
+                      <!-- FICHA DE PRODUCTO -->
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row" ondragover=onDragOver(event) ondrop=onDrop(event)>
+                <div class="card align-self-center">
+                    <h6 class="card-header card-subtitle text-center">Carrito de la compra</h6>
+                    <img src="css/img/carrito.png" class="carrito" alt="carrito" width="10%" height="auto">
+                    <ul class="list-group border-0 list-group-flush" id="carrito-lista">
+                        <!-- CARRITO -->
+                    </ul>
+                    <div class="card-footer text-right">
+                      <h5 class="total" id="total">Total: 0€</h5>
+                    </div>
+                </div>
+            </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="contacto">
+        <footer class="container">
+        <div class="footer">
+          <div class="row">
+          <div class="col">
+            <img src="css/img/logo.png" alt="Guillem Logo" width="60%" height="auto">
+          </div>
+          <div class="col contacto">
+          <h3>Contacto</h3>
+            <p>giner.gb@gmail.com</p>
+            <p>679 236 865</p>
+          </div>
+        </div>
+        </div>
+        </footer>
+    </section>
+  </body>
+</html>

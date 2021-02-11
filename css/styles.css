@@ -1,0 +1,104 @@
+.container {
+  padding: 50px;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+}
+
+.header {
+  background-color: #b62757;
+}
+
+#quiensoy {
+  color: white;
+}
+
+.lead {
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+
+}
+
+.navigation a:hover {
+  background: black;
+  color: white;
+}
+
+@media all and (max-width: 800px) {
+  .navigation .logo{
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+ 
+.logo:nth-child(1){
+  flex: 1;
+}
+
+.titular {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#contacto {
+  background-color: #b62757;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  background-color: black;
+  color: white;
+}
+.card-header {
+  background-color: #b62757 !important;
+  color: white;
+}
+
+.precio {
+  text-align: center;
+}
+
+.card-footer {
+  background-color: black !important;
+  color: white;
+}
